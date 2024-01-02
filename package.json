@@ -11,5 +11,8 @@
     "url": "http://ryanjboyer.com/"
   },
   "license": "MIT",
-  "type": "library"
+  "type": "library",
+  "dependencies": {
+    "com.developedwithlove.foundation": "0.1.0-pre.1"
+  }
 }
