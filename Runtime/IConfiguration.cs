@@ -1,3 +1,3 @@
-namespace Foundation {
-    public interface IConfiguration { }
+namespace Foundation.Configuration {
+	public interface IConfiguration { }
 }

@@ -1,10 +1,8 @@
 #if ODIN_INSPECTOR
 using Sirenix.OdinInspector.Editor;
 using UnityEditor;
-using System;
-using System.Linq;
 
-namespace Foundation.Editors {
+namespace Foundation.Configuration.Editors {
 	internal sealed class ConfigurationManager : OdinMenuEditorWindow {
 		[MenuItem("Tools/Foundation/Configuration Manager")]
 		private static void OpenEditor() => GetWindow<ConfigurationManager>();

@@ -3,9 +3,9 @@ using Sirenix.OdinInspector;
 #endif
 using UnityEngine;
 
-namespace Foundation {
+namespace Foundation.Configuration {
 #if ODIN_INSPECTOR
-    [InlineEditor, Searchable, ConfigurationData]
+	[InlineEditor, Searchable, ConfigurationData]
 #endif
-    public abstract class AnyConfiguration : ScriptableObject, IConfiguration { }
+	public abstract class AnyConfiguration : ScriptableObject, IConfiguration { }
 }
