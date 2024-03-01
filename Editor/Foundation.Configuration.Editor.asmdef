@@ -1,6 +1,6 @@
 {
-    "name": "Foundation.Configuration.Editors",
-    "rootNamespace": "Foundation.Configuration.Editors",
+    "name": "Foundation.Configuration.Editor",
+    "rootNamespace": "Foundation.Editor",
     "references": [
         "GUID:421f16966af874f79b45460407e5555b"
     ],

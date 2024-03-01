@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 #endif
 using UnityEngine;
 
-namespace Foundation.Configuration {
+namespace Foundation {
 #if ODIN_INSPECTOR
 	[InlineEditor, Searchable, ConfigurationData]
 #endif
