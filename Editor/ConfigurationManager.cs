@@ -9,8 +9,15 @@ namespace Foundation.Configuration.Editors {
 
 		protected override OdinMenuTree BuildMenuTree() {
 			OdinMenuTree tree = new OdinMenuTree();
-			tree.AddAllAssetsAtPath("Configuration", "Assets/_Scriptable Objects/Configuration", typeof(AnyConfiguration), true, false);
+			tree.AddAllAssetsAtPath(null, "Assets/_Scriptable Objects/Configuration", typeof(AnyConfiguration), true, false);
 			tree.SortMenuItemsByName();
+
+			foreach (OdinMenuItem rootItem in tree.MenuItems) {
+				foreach (OdinMenuItem item in rootItem.GetChildMenuItemsRecursive(true)) {
+					item.Name = item.Name.RemovePrefix("Configuration_").RemovePrefix("CFG_");
+				}
+			}
+
 			return tree;
 		}
 	}

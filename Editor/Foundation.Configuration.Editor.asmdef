@@ -2,7 +2,8 @@
     "name": "Foundation.Configuration.Editor",
     "rootNamespace": "Foundation.Editor",
     "references": [
-        "GUID:421f16966af874f79b45460407e5555b"
+        "GUID:421f16966af874f79b45460407e5555b",
+        "GUID:d9366e63b425d409b97e07a533ec79d9"
     ],
     "includePlatforms": [
         "Editor"

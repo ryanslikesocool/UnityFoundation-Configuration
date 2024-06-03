@@ -16,3 +16,9 @@ https://github.com/ryanslikesocool/UnityFoundation-Configuration.git
 ```cs
 // TODO
 ```
+
+## Dependencies
+This package has one required dependency:
+- [Unity Foundation](https://github.com/ryanslikesocool/UnityFoundation)
+
+For best usage in the editor, [OdinInspector](https://odininspector.com/) is recommended.
