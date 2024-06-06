@@ -12,10 +12,8 @@ namespace Foundation.Configuration.Editors {
 			tree.AddAllAssetsAtPath(null, "Assets/_Scriptable Objects/Configuration", typeof(AnyConfiguration), true, false);
 			tree.SortMenuItemsByName();
 
-			foreach (OdinMenuItem rootItem in tree.MenuItems) {
-				foreach (OdinMenuItem item in rootItem.GetChildMenuItemsRecursive(true)) {
-					item.Name = item.Name.RemovePrefix("Configuration_").RemovePrefix("CFG_");
-				}
+			foreach (OdinMenuItem item in tree.RootMenuItem.GetChildMenuItemsRecursive(includeSelf: false)) {
+				item.Name = item.Name.RemovePrefix("Configuration_").RemovePrefix("CFG_");
 			}
 
 			return tree;
