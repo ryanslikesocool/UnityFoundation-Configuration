@@ -1,18 +1,17 @@
 {
-  "name": "com.developedwithlove.foundation.configuration",
-  "displayName": "Unity Foundation - Configuration",
-  "version": "0.1.0-pre.1",
-  "unity": "2021.3",
-  "description": "ScriptableObject-based configuration model for Unity.",
-  "documentationUrl": "https://github.com/ryanslikesocool/UnityFoundation-Configuration.git",
-  "author": {
-    "name": "Ryan Boyer",
-    "email": "ryanjboyer@gmail.com",
-    "url": "http://ryanjboyer.com/"
-  },
-  "license": "MIT",
-  "type": "library",
-  "dependencies": {
-    "com.developedwithlove.foundation": "0.1.0-pre.1"
-  }
+	"name": "com.developedwithlove.foundation.configuration",
+	"displayName": "Unity Foundation - Configuration",
+	"version": "0.1.0-pre.1",
+	"unity": "2021.3",
+	"description": "ScriptableObject-based configuration model for Unity.",
+	"documentationUrl": "https://github.com/ryanslikesocool/UnityFoundation-Configuration.git",
+	"author": {
+		"name": "Ryan Boyer",
+		"url": "https://ryanjboyer.com/"
+	},
+	"license": "MIT",
+	"type": "library",
+	"dependencies": {
+		"com.developedwithlove.foundation": "0.1.0-pre.1"
+	}
 }

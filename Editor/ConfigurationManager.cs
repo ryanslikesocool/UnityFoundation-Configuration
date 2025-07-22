@@ -2,10 +2,13 @@
 using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 
-namespace Foundation.Configuration.Editors {
+namespace Foundation.Configuration.Editor {
 	internal sealed class ConfigurationManager : OdinMenuEditorWindow {
 		[MenuItem("Tools/Foundation/Configuration Manager")]
-		private static void OpenEditor() => GetWindow<ConfigurationManager>();
+		private static void OpenEditor() {
+			ConfigurationManager window = GetWindow<ConfigurationManager>();
+			window.titleContent = new UnityEngine.GUIContent("Configuration Manager");
+		}
 
 		protected override OdinMenuTree BuildMenuTree() {
 			OdinMenuTree tree = new OdinMenuTree();
