@@ -7,7 +7,7 @@ namespace Foundation {
 
 		// MARK: - Fields
 
-		[SerializeField] internal List<AnyConfiguration> configurations = new();
+		[SerializeField, HideInInspector] internal List<AnyConfiguration> configurations = new();
 		private Dictionary<System.Type, AnyConfiguration> configurationMap = default;
 
 		// MARK: - Lifecyle

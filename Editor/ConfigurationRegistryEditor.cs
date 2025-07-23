@@ -13,7 +13,7 @@ namespace Foundation.Configuration.Editor {
 		// MARK: - Lifecycle
 
 		private void OnEnable() {
-			registry = (ConfigurationRegistry)serializedObject.targetObject;
+			registry = (ConfigurationRegistry)target;
 		}
 
 		// MARK: - GUI
@@ -24,6 +24,7 @@ namespace Foundation.Configuration.Editor {
 			OnConfigurationsGUI();
 
 			serializedObject.ApplyModifiedProperties();
+			EditorUtility.SetDirty(target);
 		}
 
 		private void OnConfigurationsGUI() {
