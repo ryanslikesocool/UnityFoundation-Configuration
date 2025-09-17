@@ -1,4 +1,5 @@
 #if ODIN_INSPECTOR
+using System;
 using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 
@@ -16,11 +17,20 @@ namespace Foundation.Configuration.Editor {
 			tree.SortMenuItemsByName();
 
 			foreach (OdinMenuItem item in tree.RootMenuItem.GetChildMenuItemsRecursive(includeSelf: false)) {
-				item.Name = item.Name.RemovePrefix("Configuration_").RemovePrefix("CFG_");
+				foreach (string omittedPrefix in OmittedPrefixes) {
+					item.Name = item.Name.RemovePrefix(omittedPrefix);
+				}
 			}
 
 			return tree;
 		}
+
+		// MARK: - Constants
+
+		private static readonly string[] OmittedPrefixes = new string[] {
+			"Configuration_",
+			"CFG_",
+		};
 	}
 }
 #endif

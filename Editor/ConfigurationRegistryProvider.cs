@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using Foundation.Editors;
+using Foundation.Editor;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -42,7 +40,7 @@ namespace Foundation.Configuration.Editor {
 		}
 
 		private static SerializedObject GetSerializedConfiguration()
-			=> new SerializedObject(GetOrCreateConfiguration());
+			=> new(GetOrCreateConfiguration());
 
 		private static ConfigurationRegistry LoadExistingConfiguration() {
 			string[] guids = AssetDatabase.FindAssets($"t:{typeof(ConfigurationRegistry)}");
